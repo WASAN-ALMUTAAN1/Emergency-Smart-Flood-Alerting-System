@@ -26,3 +26,7 @@ smart-flooding-system/models/*.pth
 # Large demo media
 assets/*.mov
 smart-flooding-system/static/video/*
+
+# Weights in Program (exclude from git)
+Program/Models/*.pt
+Program/Models/*.pth
