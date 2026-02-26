@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local caches
+smart-flooding-system/__pycache__/
+
+# Temp/lock files
+.!*
+
+# Large ML weights (use GitHub Releases instead)
+smart-flooding-system/models/*.pt
+smart-flooding-system/models/*.pth
+
+# Large demo media
+assets/*.mov
+smart-flooding-system/static/video/*
