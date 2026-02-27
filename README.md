@@ -1,5 +1,5 @@
 <p align="center">
-<img src="docs/banner..jpg" width="100%">
+<img src="docs/natural-disaster-landscape.jpg" width="100%">
 </p>
 
 <h1 align="center">
