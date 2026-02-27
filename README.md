@@ -1,5 +1,5 @@
 <p align="center">
-<img src="docs/natural-disaster-landscape.jpg" width="100%">
+<img src="docs/banner.jpg" width="100%">
 </p>
 
 <h1 align="center">
@@ -7,32 +7,34 @@ Emergency Smart Flood Alerting System for Safer Driving in Saudi Arabia
 </h1>
 
 <p align="center">
-AI-Powered Computer Vision System for Flood Scene Analysis
+Artificial Intelligence System for Flood Scene Analysis Using Computer Vision
 </p>
 
 <p align="center">
 
 <img src="https://img.shields.io/badge/Country-Saudi%20Arabia-006C35?style=for-the-badge">
-<img src="https://img.shields.io/badge/Field-Computer%20Vision-0f9d58?style=for-the-badge">
+<img src="https://img.shields.io/badge/Domain-Computer%20Vision-0f9d58?style=for-the-badge">
 <img src="https://img.shields.io/badge/Framework-PyTorch-047857?style=for-the-badge">
-<img src="https://img.shields.io/badge/Web%20App-Flask-065f46?style=for-the-badge">
+<img src="https://img.shields.io/badge/Web%20Application-Flask-065f46?style=for-the-badge">
 <img src="https://img.shields.io/badge/System-AI%20Vision-064e3b?style=for-the-badge">
 
 </p>
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=006C35&height=140&section=header&text=AI%20Flood%20Detection%20System&fontColor=ffffff&fontSize=35"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=006C35&height=160&&section=header" width="100%"/>
+
 
 # 🌊 Project Overview
 
-Flooding represents a major environmental hazard that can threaten drivers and transportation systems.  
+Flooding represents one of the most dangerous environmental hazards affecting road safety.  
+Flooded roads can lead to severe traffic incidents, infrastructure disruption, and driver risk.
 
-This project introduces an **Artificial Intelligence system for flood scene analysis** using computer vision techniques.
+This project introduces an **Artificial Intelligence system for flood scene analysis** using **computer vision techniques**.
 
-The system integrates **deep learning models** with a **Flask-based web dashboard** to analyze flood imagery and visualize results.
+The system integrates **deep learning models** with a **Flask-based web interface** to analyze flood imagery and visualize results.
 
-The objective of this project is to demonstrate how **computer vision pipelines** can be used to analyze flood environments and present results through an interactive interface.
+The goal of the system is to demonstrate how **AI vision pipelines can interpret flood environments** and present visual insights through an interactive interface.
 
 ---
 
@@ -41,16 +43,17 @@ The objective of this project is to demonstrate how **computer vision pipelines*
 ```mermaid
 flowchart LR
 
-A[Visual Input] --> B[Preprocessing]
-B --> C[EfficientNet Classification]
-B --> D[YOLOv5 Object Detection]
-B --> E[YOLOv8 Segmentation]
+A[Image / Video Input] --> B[Image Preprocessing]
+
+B --> C[EfficientNet<br>Scene Classification]
+B --> D[YOLOv5<br>Object Detection]
+B --> E[YOLOv8<br>Flood Segmentation]
 
 C --> F[Scene Understanding]
 D --> F
 E --> F
 
-F --> G[Visualization Dashboard]
+F --> G[Result Visualization]
 
 style A fill:#006C35,color:white
 style B fill:#047857,color:white
@@ -61,60 +64,99 @@ style F fill:#065f46,color:white
 style G fill:#064e3b,color:white
 ```
 
-The AI pipeline combines **classification, detection, and segmentation models** to analyze flood scenes from multiple perspectives.
+The pipeline combines **classification, detection, and segmentation models** to interpret flood scenes at multiple levels.
 
 ---
 
-# 🧩 3D System Architecture
+# 🧩 AI System Architecture
 
 ```mermaid
 graph TD
 
-Input[Image / Video Input]
+Input[Visual Data Input]
 
-Pre[Preprocessing]
+Preprocessing[Image Processing]
 
-C1[EfficientNet<br>Classification]
-C2[YOLOv5<br>Detection]
-C3[YOLOv8<br>Segmentation]
+Classifier[EfficientNet Classification]
 
-Fusion[Result Fusion]
+Detector[YOLOv5 Detection]
 
-UI[Flask Web Dashboard]
+Segmenter[YOLOv8 Segmentation]
 
-Input --> Pre
-Pre --> C1
-Pre --> C2
-Pre --> C3
+Fusion[Multi-Model Result Fusion]
 
-C1 --> Fusion
-C2 --> Fusion
-C3 --> Fusion
+Dashboard[Flask Visualization Interface]
 
-Fusion --> UI
+Input --> Preprocessing
+
+Preprocessing --> Classifier
+Preprocessing --> Detector
+Preprocessing --> Segmenter
+
+Classifier --> Fusion
+Detector --> Fusion
+Segmenter --> Fusion
+
+Fusion --> Dashboard
 
 style Input fill:#006C35,color:white
-style Pre fill:#047857,color:white
-style C1 fill:#059669,color:white
-style C2 fill:#10b981,color:black
-style C3 fill:#34d399,color:black
+style Preprocessing fill:#047857,color:white
+style Classifier fill:#059669,color:white
+style Detector fill:#10b981,color:black
+style Segmenter fill:#34d399,color:black
 style Fusion fill:#065f46,color:white
-style UI fill:#064e3b,color:white
+style Dashboard fill:#064e3b,color:white
 ```
 
-The architecture demonstrates how multiple computer vision components collaborate within a unified pipeline.
+This architecture illustrates how **multiple AI models cooperate in a unified visual analysis pipeline**.
 
 ---
 
-# 📊 AI Model Overview
+# 🗺 Flood Scene Interpretation Map
+
+```mermaid
+flowchart TD
+
+Scene[Road Environment Scene]
+
+Scene --> Flood[Flood Water Detection]
+
+Scene --> Vehicles[Vehicle Detection]
+
+Scene --> RoadSurface[Road Surface Observation]
+
+Flood --> Risk[Risk Evaluation]
+
+Vehicles --> Risk
+
+RoadSurface --> Risk
+
+Risk --> Visualization[Visual Dashboard]
+
+Visualization --> Awareness[Driver Awareness]
+
+style Scene fill:#006C35,color:white
+style Flood fill:#059669,color:white
+style Vehicles fill:#10b981,color:black
+style RoadSurface fill:#34d399,color:black
+style Risk fill:#065f46,color:white
+style Visualization fill:#047857,color:white
+style Awareness fill:#064e3b,color:white
+```
+
+This conceptual map demonstrates how **computer vision techniques analyze road environments during flood events**.
+
+---
+
+# 📊 AI Model Components
 
 | Model | Purpose |
 |------|------|
 | EfficientNet | Flood scene classification |
 | YOLOv5 | Object detection |
-| YOLOv8 | Image segmentation |
+| YOLOv8 | Flood segmentation |
 
-The combination of these models enables **multi-level scene interpretation**.
+The system integrates these models to achieve **multi-level scene interpretation**.
 
 ---
 
@@ -122,53 +164,50 @@ The combination of these models enables **multi-level scene interpretation**.
 
 | Component | Description |
 |------|------|
-| AI Models | Deep learning models for visual analysis |
-| Processing Pipeline | Image preprocessing and model inference |
-| Web Dashboard | Interactive visualization interface |
-| Documentation | Project methodology and datasets |
-
----
-
-# 🧠 Flood Scene Analysis Concept
-
-```mermaid
-flowchart TD
-
-Scene[Road Scene]
-
-Scene --> Water[Flood Water Detection]
-Scene --> Vehicles[Vehicle Detection]
-Scene --> Objects[Environmental Objects]
-
-Water --> Risk[Hazard Evaluation]
-Vehicles --> Risk
-Objects --> Risk
-
-Risk --> Alert[Driver Awareness]
-
-style Scene fill:#006C35,color:white
-style Water fill:#059669,color:white
-style Vehicles fill:#10b981,color:black
-style Objects fill:#34d399,color:black
-style Risk fill:#065f46,color:white
-style Alert fill:#064e3b,color:white
-```
-
-This conceptual diagram illustrates how computer vision techniques can interpret flood environments.
+| Deep Learning Models | AI models used for scene analysis |
+| Processing Pipeline | Image preprocessing and inference |
+| Web Interface | Flask visualization dashboard |
+| Documentation | Project methodology and references |
 
 ---
 
 # 🖥 Web Application
 
-The project includes a **Flask-based web interface** that allows users to interact with the system.
+The project includes a **Flask-based web interface** designed to visualize AI results.
 
 The interface demonstrates:
 
-• visual input analysis  
+• image input analysis  
 • AI model inference  
 • result visualization  
 
-The application illustrates how **deep learning models can be integrated into interactive systems**.
+This interface shows how **AI vision models can be integrated into an interactive application environment**.
+
+---
+
+# 🧠 AI Processing Concept
+
+```mermaid
+flowchart LR
+
+Data[Visual Data]
+
+Data --> Vision[Computer Vision Models]
+
+Vision --> Analysis[Scene Analysis]
+
+Analysis --> Visualization[Dashboard Visualization]
+
+Visualization --> Output[AI Interpretation]
+
+style Data fill:#006C35,color:white
+style Vision fill:#047857,color:white
+style Analysis fill:#059669,color:white
+style Visualization fill:#065f46,color:white
+style Output fill:#064e3b,color:white
+```
+
+This simplified diagram summarizes the **flow of information inside the AI system**.
 
 ---
 
@@ -201,20 +240,20 @@ Emergency-Smart-Flood-Alerting-System
 
 # ⚙ Installation
 
-Clone repository:
+Clone the repository
 
 ```
 git clone https://github.com/yourusername/Emergency-Smart-Flood-Alerting-System
 cd Emergency-Smart-Flood-Alerting-System
 ```
 
-Install dependencies:
+Install dependencies
 
 ```
 pip install -r smart-flooding-system/requirements.txt
 ```
 
-Run application:
+Run the application
 
 ```
 python smart-flooding-system/app.py
@@ -236,16 +275,19 @@ smart-flooding-system/models
 
 # 📚 Documentation
 
-Project documentation is located in the **docs** directory.
+Project documentation is available in the **docs directory**.
 
-The documentation describes the project methodology and implementation details.
+```
+docs/Emergency_Smart_Flood_Alerting_System.pdf
+```
+
+Dataset references are listed in:
+
+```
+docs/DatasetsLinks.txt
+```
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=006C35&height=140&section=footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=006C35&height=140&section=footer" width="100%"/>
 
-<p align="center">
-
-Artificial Intelligence for Environmental Scene Analysis
-
-</p>
