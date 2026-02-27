@@ -1,13 +1,9 @@
 <p align="center">
-<img src="docs/banner.jpg" width="100%">
+  <img src="docs/banner.jpg" width="100%" alt="Flood AI System Banner">
 </p>
 
-<h1 align="center">
-Emergency Smart Flood Alerting System for Safer Driving in Saudi Arabia
-</h1>
-
 <p align="center">
-Artificial Intelligence System for Flood Scene Analysis Using Computer Vision
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:006C35,100:10B981&height=170&section=header&text=Emergency%20Smart%20Flood%20Alerting%20System%20for%20Safer%20Driving%20in%20Saudi%20Arabia&fontSize=20&fontColor=ffffff&animation=fadeIn&fontAlignY=40" width="100%" />
 </p>
 
 <p align="center">
@@ -20,40 +16,99 @@ Artificial Intelligence System for Flood Scene Analysis Using Computer Vision
 
 </p>
 
----
+<p align="center">
+<b>Artificial Intelligence System for Flood Scene Analysis Using Computer Vision</b>
+</p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=006C35&height=160&&section=header" width="100%"/>
+<p align="center">
+<sub>Code and documentation are provided in this repository. Model weights and the system demonstration video are available through GitHub Releases.</sub>
+</p>
 
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" />
+</p>
 
-# 🌊 Project Overview
+# 🔎 Table of Contents
 
-Flooding represents one of the most dangerous environmental hazards affecting road safety.  
-Flooded roads can lead to severe traffic incidents, infrastructure disruption, and driver risk.
+- Research Overview  
+- Research Motivation  
+- Research Contribution  
+- AI System Pipeline  
+- System Implementation  
+- Demonstration Video  
+- Repository Structure  
+- Installation and Execution  
+- Documentation  
 
-This project introduces an **Artificial Intelligence system for flood scene analysis** using **computer vision techniques**.
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" />
+</p>
 
-The system integrates **deep learning models** with a **Flask-based web interface** to analyze flood imagery and visualize results.
+# 🌊 Research Overview
 
-The goal of the system is to demonstrate how **AI vision pipelines can interpret flood environments** and present visual insights through an interactive interface.
+Flooding is one of the most significant environmental hazards affecting road safety and transportation infrastructure.  
+Flooded roads can lead to traffic accidents, infrastructure damage, and severe risks for drivers.
 
----
+This project presents an **Artificial Intelligence system for flood scene analysis** using **computer vision techniques**.
 
-# 🧠 AI Vision Pipeline
+The system analyzes visual road scenes and identifies environmental conditions related to flooding.  
+The results are presented through a **Flask-based web visualization interface** that allows users to interpret AI predictions.
+
+This work demonstrates how **deep learning models can analyze complex environmental scenes and support hazard awareness in transportation environments.**
+
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" />
+</p>
+
+# 🎯 Research Motivation
+
+Road flooding events present significant safety challenges for drivers and emergency response systems.
+
+Traditional monitoring approaches rely on manual observation or sensor-based infrastructure, which may not always provide sufficient environmental awareness.
+
+Computer vision provides an alternative approach by enabling automated **visual scene interpretation** using deep learning models.
+
+The objective of this project is to explore how **AI-based visual analysis can interpret flood environments and present interpretable insights through a software interface.**
+
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" />
+</p>
+
+# 🎓 Research Contribution
+
+This project demonstrates a practical framework for **AI-based environmental scene interpretation** using computer vision.
+
+The main contributions include:
+
+• Integration of **multiple deep learning models** within a unified computer vision pipeline  
+• Application of **classification, detection, and segmentation models** for environmental analysis  
+• Development of a **Flask-based visualization interface** for presenting AI results  
+• Demonstration of how **AI systems can analyze road environments during flood conditions**
+
+The repository provides the necessary components to reproduce the system and understand its methodology.
+
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" />
+</p>
+
+# 🧠 AI System Pipeline
 
 ```mermaid
 flowchart LR
 
-A[Image / Video Input] --> B[Image Preprocessing]
+A[Image or Video Input] --> B[Image Preprocessing]
 
 B --> C[EfficientNet<br>Scene Classification]
+
 B --> D[YOLOv5<br>Object Detection]
+
 B --> E[YOLOv8<br>Flood Segmentation]
 
-C --> F[Scene Understanding]
+C --> F[Scene Interpretation]
 D --> F
 E --> F
 
-F --> G[Result Visualization]
+F --> G[Flask Visualization Interface]
 
 style A fill:#006C35,color:white
 style B fill:#047857,color:white
@@ -64,190 +119,173 @@ style F fill:#065f46,color:white
 style G fill:#064e3b,color:white
 ```
 
-The pipeline combines **classification, detection, and segmentation models** to interpret flood scenes at multiple levels.
+The system pipeline integrates multiple computer vision tasks:
+
+- **Scene Classification** using EfficientNet  
+- **Object Detection** using YOLOv5  
+- **Flood Segmentation** using YOLOv8  
+
+These models process the visual input and provide complementary interpretations of the road environment.
+
+The combined outputs are visualized through a **Flask-based dashboard interface**.
+
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" />
+</p>
+
+# Methodology
+
+The system is based on three major AI tasks used in computer vision.
+
+## Scene Classification
+
+EfficientNet is used to classify road scenes into flood-related categories.
+
+This step determines whether a scene contains potential flooding conditions.
 
 ---
 
-# 🧩 AI System Architecture
+## Object Detection
 
-```mermaid
-graph TD
+YOLOv5 is used to detect objects within the scene such as:
 
-Input[Visual Data Input]
+- vehicles  
+- road objects  
+- environmental elements  
 
-Preprocessing[Image Processing]
-
-Classifier[EfficientNet Classification]
-
-Detector[YOLOv5 Detection]
-
-Segmenter[YOLOv8 Segmentation]
-
-Fusion[Multi-Model Result Fusion]
-
-Dashboard[Flask Visualization Interface]
-
-Input --> Preprocessing
-
-Preprocessing --> Classifier
-Preprocessing --> Detector
-Preprocessing --> Segmenter
-
-Classifier --> Fusion
-Detector --> Fusion
-Segmenter --> Fusion
-
-Fusion --> Dashboard
-
-style Input fill:#006C35,color:white
-style Preprocessing fill:#047857,color:white
-style Classifier fill:#059669,color:white
-style Detector fill:#10b981,color:black
-style Segmenter fill:#34d399,color:black
-style Fusion fill:#065f46,color:white
-style Dashboard fill:#064e3b,color:white
-```
-
-This architecture illustrates how **multiple AI models cooperate in a unified visual analysis pipeline**.
+Object detection helps identify how flooding interacts with road environments.
 
 ---
 
-# 🗺 Flood Scene Interpretation Map
+## Image Segmentation
 
-```mermaid
-flowchart TD
+YOLOv8 segmentation is used to identify **flood water regions at the pixel level**.
 
-Scene[Road Environment Scene]
+Segmentation allows precise visualization of flooded areas within the scene.
 
-Scene --> Flood[Flood Water Detection]
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" />
+</p>
 
-Scene --> Vehicles[Vehicle Detection]
+# Datasets
 
-Scene --> RoadSurface[Road Surface Observation]
+The system was developed using multiple datasets related to flood environments.
 
-Flood --> Risk[Risk Evaluation]
+The datasets include images representing:
 
-Vehicles --> Risk
+- flooded roads  
+- non-flood road scenes  
+- flood water surfaces  
+- vehicles in flood conditions  
+- environmental water levels  
 
-RoadSurface --> Risk
+Dataset links used during the project are provided in:
 
-Risk --> Visualization[Visual Dashboard]
+🔗 [Dataset Sources](docs/DatasetsLinks.txt)
 
-Visualization --> Awareness[Driver Awareness]
+# Data Processing
 
-style Scene fill:#006C35,color:white
-style Flood fill:#059669,color:white
-style Vehicles fill:#10b981,color:black
-style RoadSurface fill:#34d399,color:black
-style Risk fill:#065f46,color:white
-style Visualization fill:#047857,color:white
-style Awareness fill:#064e3b,color:white
-```
+Several preprocessing steps were applied before model training.
 
-This conceptual map demonstrates how **computer vision techniques analyze road environments during flood events**.
+These steps include:
 
----
+- image resizing  
+- pixel normalization  
+- grayscale conversion for traditional models  
+- data augmentation  
 
-# 📊 AI Model Components
+Data augmentation techniques include:
 
-| Model | Purpose |
-|------|------|
-| EfficientNet | Flood scene classification |
-| YOLOv5 | Object detection |
-| YOLOv8 | Flood segmentation |
+- rotation  
+- horizontal flipping  
+- vertical flipping  
 
-The system integrates these models to achieve **multi-level scene interpretation**.
+These techniques improve model generalization and reduce overfitting.
 
----
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" />
+</p>
 
-# 📊 System Components
 
-| Component | Description |
-|------|------|
-| Deep Learning Models | AI models used for scene analysis |
-| Processing Pipeline | Image preprocessing and inference |
-| Web Interface | Flask visualization dashboard |
-| Documentation | Project methodology and references |
+# Key Results
 
----
+Experimental results demonstrate that deep learning models significantly outperform traditional machine learning approaches.
 
-# 🖥 Web Application
+EfficientNet achieved classification performance approaching **98% accuracy**.
 
-The project includes a **Flask-based web interface** designed to visualize AI results.
+YOLO-based models demonstrated strong performance in both object detection and segmentation tasks.
 
-The interface demonstrates:
+The results indicate that **deep learning-based computer vision systems can effectively interpret flood scenes from road imagery**.
 
-• image input analysis  
-• AI model inference  
-• result visualization  
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" />
+</p>
 
-This interface shows how **AI vision models can be integrated into an interactive application environment**.
+# 🖥 System Implementation
 
----
+The project includes a **Flask web application** designed to visualize AI inference results.
 
-# 🧠 AI Processing Concept
+The application allows users to:
 
-```mermaid
-flowchart LR
+• upload visual flood scenes  
+• run deep learning inference  
+• visualize prediction outputs  
 
-Data[Visual Data]
+This implementation demonstrates how **AI vision models can be integrated into interactive software systems.**
 
-Data --> Vision[Computer Vision Models]
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" />
+</p>
 
-Vision --> Analysis[Scene Analysis]
+# 🎥 Demonstration Video
 
-Analysis --> Visualization[Dashboard Visualization]
+<div align="center">
 
-Visualization --> Output[AI Interpretation]
+<a href="https://github.com/WASAN-ALMUTAAN1/Emergency-Smart-Flood-Alerting-System/releases/download/v1.0.0/EmergencySmartFloodAlertingSystemforSaferDrivinginSaudiArabia.mov">
 
-style Data fill:#006C35,color:white
-style Vision fill:#047857,color:white
-style Analysis fill:#059669,color:white
-style Visualization fill:#065f46,color:white
-style Output fill:#064e3b,color:white
-```
+<img src="https://img.shields.io/badge/▶%20Watch%20System%20Demo-AI%20Flood%20Detection-006C35?style=for-the-badge&logo=github">
 
-This simplified diagram summarizes the **flow of information inside the AI system**.
+</a>
 
----
+</div>
+
+The demonstration video presents the system workflow and visual inference results.
+
+The video is provided through **GitHub Releases** to maintain a lightweight repository structure.
+
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" />
+</p>
 
 # 🗂 Repository Structure
 
 ```
 Emergency-Smart-Flood-Alerting-System
-│
+
 ├── smart-flooding-system
 │   ├── app.py
 │   ├── requirements.txt
 │   ├── templates
-│   ├── static
-│   └── models
-│
+│   └── static
+
 ├── Program
-│   ├── CPCS432_Program.ipynb
-│   └── Models
-│
+│   └── CPCS432_Program.ipynb
+
 ├── docs
 │   ├── DatasetsLinks.txt
 │   ├── Emergency_Smart_Flood_Alerting_System.pdf
-│   └── Emergency Smart Flood Alerting System Report
-│
+│   └── EmergencyـSmartـFloodـAlertingـSystemـforـSaferـDrivinginـSaudiـArabiaـReport.pdf
+
 └── assets
-    └── project demonstration video
 ```
 
----
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" />
+</p>
 
-# ⚙ Installation
+# ⚙ Installation and Execution
 
-Clone the repository
-
-```
-git clone https://github.com/yourusername/Emergency-Smart-Flood-Alerting-System
-cd Emergency-Smart-Flood-Alerting-System
-```
-
-Install dependencies
+Install the project dependencies
 
 ```
 pip install -r smart-flooding-system/requirements.txt
@@ -259,35 +297,22 @@ Run the application
 python smart-flooding-system/app.py
 ```
 
----
+The Flask server will start locally and allow interaction with the AI flood analysis system.
 
-# 📦 Model Weights
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" />
+</p>
 
-Model weights are provided through **GitHub Releases** to keep the repository lightweight.
-
-After downloading the weights place them in:
-
-```
-smart-flooding-system/models
-```
-
----
 
 # 📚 Documentation
 
-Project documentation is available in the **docs directory**.
+| Resource | Description |
+|--------|-------------|
+| 📄 [Research Paper](docs/Emergency_Smart_Flood_Alerting_System.pdf) | Scientific description of the proposed AI flood analysis system |
+| 📘 [Technical Report](docs/EmergencyـSmartـFloodـAlertingـSystemـforـSaferـDrivinginـSaudiـArabiaـReport.pdf) | Detailed implementation and system design |
+| 🔗 [Dataset Sources](docs/DatasetsLinks.txt) | References to datasets used for training and evaluation |
 
-```
-docs/Emergency_Smart_Flood_Alerting_System.pdf
-```
-
-Dataset references are listed in:
-
-```
-docs/DatasetsLinks.txt
-```
-
----
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=006C35&height=140&section=footer" width="100%"/>
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:006C35,100:10B981&height=140&section=footer" width="100%" />
+</p>
 
