@@ -1,159 +1,202 @@
 <p align="center">
-  <img src="docs/banner.jpg" width="100%">
+  <img src="docs/banner.jpg" width="100%" alt="Emergency Smart Flood Alerting System">
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:006C35,100:10B981&height=180&section=header&text=Emergency%20Smart%20Flood%20Alerting%20System&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%" />
 </p>
 
 <h1 align="center">
-Emergency Smart Flood Alerting System for Safer Driving in Saudi Arabia
+🇸🇦 Emergency Smart Flood Alerting System
 </h1>
 
 <p align="center">
-AI-Based Computer Vision System for Flood Detection, Environmental Monitoring, and Road Safety
+AI-Powered Computer Vision Framework for Flood Scene Analysis and Safer Driving in Saudi Arabia
 </p>
-
----
 
 <p align="center">
 
-<img src="https://img.shields.io/badge/Domain-Computer%20Vision-006C35?style=for-the-badge">
-<img src="https://img.shields.io/badge/AI-Deep%20Learning-047857?style=for-the-badge">
+<img src="https://img.shields.io/badge/Country-Saudi%20Arabia-006C35?style=for-the-badge&logo=saudiarabia">
+<img src="https://img.shields.io/badge/Domain-Computer%20Vision-047857?style=for-the-badge">
+<img src="https://img.shields.io/badge/AI-Deep%20Learning-059669?style=for-the-badge">
 <img src="https://img.shields.io/badge/Framework-PyTorch-065f46?style=for-the-badge">
-<img src="https://img.shields.io/badge/Web%20Interface-Flask-059669?style=for-the-badge">
-<img src="https://img.shields.io/badge/Application-Disaster%20Monitoring-064e3b?style=for-the-badge">
+<img src="https://img.shields.io/badge/Web%20App-Flask-10B981?style=for-the-badge">
+
+</p>
+
+<p align="center">
+
+<a href="https://github.com/WASAN-ALMUTAAN1/Emergency-Smart-Flood-Alerting-System/releases">
+<img src="https://img.shields.io/badge/▶%20Demo%20%26%20Models-Releases-006C35?style=for-the-badge&logo=github">
+</a>
+
+<a href="DATASETS.md">
+<img src="https://img.shields.io/badge/Datasets-Documentation-10B981?style=for-the-badge">
+</a>
 
 </p>
 
 ---
 
-# 🌊 Project Overview
+# 🔎 Table of Contents
 
-Flooding represents a major environmental risk that significantly impacts road safety and transportation infrastructure.
-
-This project introduces an **AI-powered flood monitoring system** that analyzes road environments using **advanced computer vision models**.
-
-The system combines multiple deep learning approaches to automatically:
-
-• Detect flood conditions in road scenes  
-• Identify affected objects such as vehicles and humans  
-• Segment flooded regions and estimate water levels  
-
-The results are presented through an **interactive AI dashboard**, enabling intuitive visualization of environmental conditions.
-
-This work demonstrates how **artificial intelligence can enhance disaster awareness and improve road safety through visual environmental analysis.**
-
----
-
-# 🚀 Key Strengths of the System
-
-This project demonstrates several strong technical contributions:
-
-✔ Integration of **multiple computer vision tasks within one unified AI pipeline**
-
-✔ Combination of **classification, object detection, and segmentation models**
-
-✔ Implementation of **state-of-the-art deep learning architectures**
-
-✔ Development of a **fully functional AI-powered web interface**
-
-✔ Evaluation across **multiple datasets for robust environmental analysis**
-
-✔ High-performance results demonstrating the effectiveness of modern deep learning approaches
+- Overview
+- Research Highlights
+- Key Features
+- AI System Architecture
+- AI Models
+- Datasets
+- Experimental Setup
+- Results
+- Example Predictions
+- System Interface
+- System Demonstration
+- Repository Structure
+- Installation
+- Citation
+- License
 
 ---
 
-# 🧠 AI System Pipeline
+# 🌊 Overview
 
-The system uses a multi-stage computer vision architecture.
+Flooding represents one of the most significant environmental hazards affecting transportation systems and road safety worldwide.
+
+This project introduces an **AI-powered flood analysis system** that leverages advanced **computer vision models** to interpret flood scenes in road environments.
+
+The system integrates multiple deep learning models capable of:
+
+• Detecting flood conditions in road scenes  
+• Identifying vehicles and humans affected by flooding  
+• Segmenting flooded regions within the environment  
+• Estimating environmental flood severity  
+
+Results are presented through an **interactive AI dashboard**, allowing intuitive interpretation of environmental conditions.
+
+This work demonstrates how **artificial intelligence can enhance disaster awareness and improve road safety in Saudi Arabia.**
+
+---
+
+# 📌 Research Highlights
+
+• Multi-model **computer vision pipeline** for flood scene interpretation  
+
+• EfficientNet classification model achieving **~98% accuracy**
+
+• Integration of **object detection and segmentation models**
+
+• Interactive **Flask-based AI dashboard**
+
+• AI application for **transportation safety and environmental monitoring**
+
+---
+
+# 🚀 Key Features
+
+✔ Multi-Model AI Pipeline  
+
+✔ Integration of **Classification + Detection + Segmentation**
+
+✔ State-of-the-Art Deep Learning Models  
+
+✔ Interactive **Flask Web Application**
+
+✔ Multiple Public Datasets for Robust Training  
+
+✔ Research-Level Experimental Evaluation  
+
+✔ Deployment-Ready AI System  
+
+---
+
+# 🧠 AI System Architecture
+
+The framework follows a **multi-stage computer vision pipeline** designed for comprehensive flood scene interpretation.
 
 ```mermaid
 flowchart LR
-
 A[Input Image] --> B[Image Preprocessing]
-
 B --> C[EfficientNet Classification]
 B --> D[YOLOv5 Object Detection]
 B --> E[YOLOv8 Flood Segmentation]
-
 C --> F[AI Interpretation Layer]
 D --> F
 E --> F
-
-F --> G[Interactive Flask Dashboard]
+F --> G[Flask Dashboard Interface]
 ```
+
+Each AI module contributes complementary environmental information.
+
+| Module | Function |
+|------|------|
+Classification | Detect flood presence |
+Object Detection | Identify vehicles and humans |
+Segmentation | Detect flooded regions |
+
+Together these models create a **holistic environmental analysis system**.
 
 ---
 
 # 🤖 AI Models
 
-The system integrates several powerful deep learning models.
+The system integrates multiple deep learning architectures.
 
 | Task | Model | Role |
-|-----|------|------|
-| Scene Classification | EfficientNet | Detect flood vs non-flood environments |
-| Object Detection | YOLOv5 | Detect flooded vehicles and humans |
-| Flood Segmentation | YOLOv8 | Identify flooded regions in the scene |
+|------|------|------|
+Flood Classification | EfficientNet | Detect flood scenes |
+Object Detection | YOLOv5 | Detect vehicles and humans |
+Flood Segmentation | YOLOv8 | Identify flooded regions |
 
-Pre-trained models included in the repository:
+Trained model weights are provided through **GitHub Releases** to maintain a lightweight repository.
 
-```
-EfficientNet_Without_Dropout.pth
-YoloV5_best.pt
-YoloV8_best.pt
-```
-
-These models provide high-performance visual analysis across multiple flood-related tasks.
+➡  
+https://github.com/WASAN-ALMUTAAN1/Emergency-Smart-Flood-Alerting-System/releases
 
 ---
 
 # 📊 Datasets
 
-The system was trained using multiple publicly available datasets covering diverse flood scenarios.
+Multiple publicly available datasets were used for training and evaluation.
 
-### Flood / No-Flood Dataset
-Binary classification dataset containing flood and non-flood road scenes.
+These datasets support:
 
-### Flood Dataset (4GB)
-Large dataset containing thousands of flood and normal environment images.
+• Flood Scene Classification  
+• Object Detection in Flood Environments  
+• Flood Area Segmentation  
+• Water Level Estimation  
 
-### Flood Area Segmentation Dataset
-Pixel-level annotated dataset for identifying flooded regions.
+Full dataset documentation:
 
-### Flooded Objects Dataset
-Detection dataset including:
-
-• flooded vehicles  
-• flooded humans  
-
-### Water Levels Dataset
-
-Dataset containing **13 classes** representing different water levels for environmental severity estimation.
-
-The use of multiple datasets enables the system to learn **diverse flood scenarios and environmental conditions.**
+➡ **[DATASETS.md](DATASETS.md)**
 
 ---
 
 # 🔬 Experimental Setup
 
-Experiments were conducted using:
+Training environment
 
 ```
 Python 3.9
-PyTorch 1.12
+PyTorch
 Google Colab GPU (NVIDIA T4)
 ```
 
-Training configuration:
+Training configuration
 
 ```
 Optimizer: Adam
 Learning Rate: 0.001
-
-Batch Size
-Classification: 32
-Detection: 16
-Segmentation: 4
 ```
 
-Evaluation metrics include:
+Batch sizes
+
+```
+Classification : 32
+Detection      : 16
+Segmentation   : 4
+```
+
+Evaluation metrics
 
 ```
 Accuracy
@@ -161,59 +204,75 @@ Precision
 Recall
 F1 Score
 mAP@0.5
-Intersection over Union (IoU)
+IoU
 ```
 
 ---
 
-# 📈 Experimental Results
+# 📈 Results
 
-The experimental evaluation demonstrates strong performance across all computer vision tasks.
+The proposed system demonstrates strong performance across multiple computer vision tasks.
 
-### Classification Performance
+### Flood Scene Classification
 
-EfficientNet achieved outstanding performance with a cross-validation accuracy of approximately:
+EfficientNet achieved approximately
 
 ```
-98.48%
+~98% accuracy
 ```
 
-This highlights the effectiveness of deep learning models for flood scene classification.
+### Object Detection
 
----
-
-### Detection Performance
-
-YOLO-based models demonstrated strong object detection performance.
-
-| Model | Precision | Recall | mAP@0.5 |
+| Model | Precision | Recall | mAP |
 |------|------|------|------|
-YOLOv5 | 0.73 | 0.77 | 0.76
-YOLOv8 | **0.88** | **0.84** | **0.92**
+YOLOv5 | 0.73 | 0.77 | 0.76 |
+YOLOv8 | **0.88** | **0.84** | **0.92** |
+
+### Flood Segmentation
+
+YOLOv8 segmentation models demonstrated strong performance in identifying flooded regions with high pixel-level accuracy.
+
+These results highlight the effectiveness of **deep learning for environmental monitoring applications**.
 
 ---
 
-### Segmentation Performance
+# 🖼 Example Predictions
 
-YOLOv8 segmentation models achieved excellent performance in identifying flooded regions with high IoU and pixel accuracy.
+Examples of AI-based flood scene analysis.
 
-These results demonstrate the effectiveness of deep learning models in **visual environmental analysis for flood monitoring systems.**
+| Input Image | Detection | Segmentation |
+|-------------|-----------|--------------|
+| ![](assets/example_input.jpg) | ![](assets/example_detection.jpg) | ![](assets/example_segmentation.jpg) |
+
+These visualizations demonstrate how the system interprets flood environments.
 
 ---
 
 # 🖥 System Interface
 
-The project includes a complete **AI-based web dashboard** developed using Flask.
+The project includes a **Flask-based AI dashboard**.
 
 Users can:
 
 • Upload flood scene images  
-• Select AI analysis models  
-• Run automated image analysis  
-• Visualize detection results  
-• View flood segmentation overlays  
 
-The interface provides a clear and intuitive way to interact with the AI system.
+• Run AI inference  
+
+• Visualize detection and segmentation outputs  
+
+• Interpret flood conditions in real time
+
+---
+
+# 🎥 System Demonstration
+
+A full system demonstration is available through **GitHub Releases**.
+
+▶ Watch the demo
+
+https://github.com/WASAN-ALMUTAAN1/Emergency-Smart-Flood-Alerting-System/releases
+
+The video demonstrates the full workflow of the AI system.
 
 ---
 
@@ -222,75 +281,77 @@ The interface provides a clear and intuitive way to interact with the AI system.
 ```
 Emergency-Smart-Flood-Alerting-System
 
-smart-flooding-system
-│
-├── app.py
-├── templates
-│   └── index.html
-├── static
-│
-Program
-│
-├── CPCS432_Program.ipynb
+├── README.md
+├── DATASETS.md
 
-models
-│
-├── EfficientNet_Without_Dropout.pth
-├── YoloV5_best.pt
-└── YoloV8_best.pt
+├── smart-flooding-system
+│   ├── app.py
+│   ├── requirements.txt
+│   ├── templates
+│   └── static
 
-docs
-│
-├── Research Paper
-├── Technical Report
-└── Dataset Sources
+├── Program
+│   └── CPCS432_Program.ipynb
+
+├── docs
+│   ├── Emergency_Smart_Flood_Alerting_System.pdf
+│   └── Emergency_Smart_Flood_Alerting_System_Report.pdf
+
+└── assets
 ```
 
 ---
 
 # ⚙ Installation
 
-Clone the repository
+Clone repository
 
 ```
-git clone https://github.com/your-repo/flood-ai-system
-cd flood-ai-system
+git clone https://github.com/WASAN-ALMUTAAN1/Emergency-Smart-Flood-Alerting-System
+cd Emergency-Smart-Flood-Alerting-System
 ```
 
 Install dependencies
 
 ```
-pip install -r requirements.txt
+pip install -r smart-flooding-system/requirements.txt
 ```
 
-Run the system
+Download trained models from **GitHub Releases**.
+
+Run the application
 
 ```
-python app.py
+python smart-flooding-system/app.py
 ```
-
-The Flask server will launch locally and allow interaction with the AI flood detection system.
 
 ---
 
-# 🎥 Demonstration
+# 📑 Citation
 
-A full system demonstration video is available in the **GitHub Releases section**.
+If you use this project for research purposes please cite:
+
+```bibtex
+@article{flood_ai_2025,
+title={Emergency Smart Flood Alerting System for Safer Driving in Saudi Arabia},
+author={Almutaani, Wasan},
+year={2025},
+institution={King Abdulaziz University}
+}
+```
 
 ---
 
-# 📚 Citation
+# 📜 License
 
-If you use this project for research or academic work, please cite:
-
-```
-Emergency Smart Flood Alerting System for Safer Driving in Saudi Arabia
-King Abdulaziz University
-Computer Vision for Disaster Monitoring
-```
+This project is released under the **MIT License**.
 
 ---
 
 <p align="center">
-AI for Disaster Awareness and Road Safety
+🇸🇦 Artificial Intelligence for Safer Roads in Saudi Arabia
+</p>
+
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:006C35,100:10B981&height=140&section=footer" width="100%">
 </p>
