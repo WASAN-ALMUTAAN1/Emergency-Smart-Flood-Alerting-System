@@ -31,49 +31,30 @@
   <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" />
 </p>
 
-<ul>
-  <li><a href="#overview"><img src="assets/green-arrow.svg" width="14" /> </a> Overview</li>
-  <li><a href="#problem-statement"><img src="assets/green-arrow.svg" width="14" /> </a> Problem Statement</li>
-</ul>
-
-## 🔎 Table of Contents
-
-- [🟢➜](#overview) Overview
-- [🟢➜](#problem-statement) Problem Statement
-- [🟢➜](#key-features) Key Features
-- [🟢➜](#ai-system-architecture) AI System Architecture
-- [🟢➜](#ai-models) AI Models
-- [🟢➜](#datasets) Datasets
-- [🟢➜](#experimental-setup) Experimental Setup
-- [🟢➜](#results) Results
-- [🟢➜](#system-interface) System Interface
-- [🟢➜](#system-screenshots) Example Output
-- [🟢➜](#system-demonstration) System Demonstration
-- [🟢➜](#repository-structure) Repository Structure
-- [🟢➜](#installation) Installation
-- [🟢➜](#future-work) Future Work
-
 
 # 🔎 Table of Contents
-- [ Overview](#overview)
-- [ Problem Statement](#problem-statement)
-- [ Key Features](#key-features)
-- [ AI System Architecture](#ai-system-architecture)
-- [ AI Models](#ai-models)
-- [ Datasets](#datasets)
-- [ Experimental Setup](#experimental-setup)
-- [ Results](#results)
-- [ System Interface](#system-interface)
-- [Example Output](#system-screenshots)
-- [ System Demonstration](#system-demonstration)
-- [ Repository Structure](#repository-structure)
-- [ Installation](#installation)
-- [ Future Work](#future-work)
+
+<a href="#overview"><img src="assets/right-arrow.png" width="16" alt="go" /></a> Overview  
+<a href="#problem-statement"><img src="assets/right-arrow.png" width="16" alt="go" /></a> Problem Statement  
+<a href="#key-features"><img src="assets/right-arrow.png" width="16" alt="go" /></a> Key Features  
+<a href="#ai-system-architecture"><img src="assets/right-arrow.png" width="16" alt="go" /></a> AI System Architecture  
+<a href="#ai-models"><img src="assets/right-arrow.png" width="16" alt="go" /></a> AI Models  
+<a href="#datasets"><img src="assets/right-arrow.png" width="16" alt="go" /></a> Datasets  
+<a href="#experimental-setup"><img src="assets/right-arrow.png" width="16" alt="go" /></a> Experimental Setup  
+<a href="#results"><img src="assets/right-arrow.png" width="16" alt="go" /></a> Results  
+<a href="#system-interface"><img src="assets/right-arrow.png" width="16" alt="go" /></a> System Interface  
+<a href="#system-screenshots"><img src="assets/right-arrow.png" width="16" alt="go" /></a> Example Output  
+<a href="#system-demonstration"><img src="assets/right-arrow.png" width="16" alt="go" /></a> System Demonstration  
+<a href="#repository-structure"><img src="assets/right-arrow.png" width="16" alt="go" /></a> Repository Structure  
+<a href="#installation"><img src="assets/right-arrow.png" width="16" alt="go" /></a> Installation  
+<a href="#future-work"><img src="assets/right-arrow.png" width="16" alt="go" /></a> Future Work  
+
+
 
 <p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
 
 <a id="overview"></a>
-# 🌊 Overview
+#  Overview
 
 Flooded roads represent one of the most dangerous environmental hazards affecting transportation systems and urban mobility. Drivers often underestimate flood severity, which can lead to vehicle damage, accidents, and life-threatening situations.
 
@@ -240,6 +221,8 @@ The interface provides **clear visualization of AI predictions and environmental
 # Example Output
 
 Below are real screenshots from the dashboard, showcasing the full AI workflow across the three core tasks.
+
+
 
 <p align="center">
   <img src="assets/Input.png" width="100%" alt="Input - Image Upload">
