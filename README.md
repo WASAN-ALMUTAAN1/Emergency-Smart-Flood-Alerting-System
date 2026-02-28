@@ -219,28 +219,38 @@ The interface provides **clear visualization of AI predictions and environmental
 
 <a id="system-screenshots"></a>
 # Example Output
-
 Below are real screenshots from the dashboard, showcasing the full AI workflow across the three core tasks.
 
 
-
+<p align="center">
+  <img src="assets/label_input.gif" width="320" alt="Input Label">
+</p>
 <p align="center">
   <img src="assets/Input.png" width="100%" alt="Input - Image Upload">
 </p>
 
 <p align="center">
+  <img src="assets/label_classification.gif" width="320" alt="Classification Label">
+</p>
+<p align="center">
   <img src="assets/Classification.png" width="100%" alt="Classification Result">
 </p>
 
+<p align="center">
+  <img src="assets/label_detection.gif" width="320" alt="Detection Label">
+</p>
 <p align="center">
   <img src="assets/ObjectDetection.png" width="100%" alt="Object Detection Result">
 </p>
 
 <p align="center">
+  <img src="assets/label_segmentation.gif" width="320" alt="Segmentation Label">
+</p>
+<p align="center">
   <img src="assets/FloodSegmentation.png" width="100%" alt="Flood Segmentation Result">
 </p>
 
-<p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
+
 
 <a id="system-demonstration"></a>
 # System Demonstration
