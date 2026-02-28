@@ -26,10 +26,10 @@ AI-Powered Computer Vision Framework for Flood Scene Analysis and Safer Driving 
 
 <p align="center">
   <a href="https://github.com/WASAN-ALMUTAAN1/Emergency-Smart-Flood-Alerting-System/releases">
-    <img src="https://img.shields.io/badge/▶%20Demo%20%26%20Models-Releases-006C35?style=for-the-badge&logo=github">
+    <img src="https://img.shields.io/badge/▶%20Demo%20%26%20Models-Releases-006C35?style=for-the-badge&logo=github&logoColor=white" alt="Demo & Models">
   </a>
   <a href="DATASETS.md">
-    <img src="https://img.shields.io/badge/Datasets-Documentation-10B981?style=for-the-badge">
+    <img src="https://img.shields.io/badge/Datasets-DATASETS.md-10B981?style=for-the-badge&logo=files&logoColor=white" alt="Datasets">
   </a>
 </p>
 
@@ -44,23 +44,41 @@ AI-Powered Computer Vision Framework for Flood Scene Analysis and Safer Driving 
 
 <hr/>
 
-# 🔎 Table of Contents
-- [🌊 Overview](#-overview)
-- [🎯 Problem Statement](#-problem-statement)
-- [🚀 Key Features](#-key-features)
-- [🧠 AI System Architecture](#-ai-system-architecture)
-- [🤖 AI Models](#-ai-models)
-- [📦 Model Weights](#-model-weights)
-- [📊 Datasets](#-datasets)
-- [🔬 Experimental Setup](#-experimental-setup)
-- [📈 Results](#-results)
-- [🖥 System Interface](#-system-interface)
-- [🖼 System Screenshots](#-system-screenshots)
-- [🎥 System Demonstration](#-system-demonstration)
-- [📂 Repository Structure](#-repository-structure)
-- [⚙ Installation](#-installation)
-- [🔭 Future Work](#-future-work)
+<!-- Navigation Buttons (In-Page) -->
+<p align="center">
+  <a href="#overview"><img src="https://img.shields.io/badge/Overview-006C35?style=for-the-badge&logo=readme&logoColor=white" alt="Overview"/></a>
+  <a href="#problem-statement"><img src="https://img.shields.io/badge/Problem-047857?style=for-the-badge&logo=pinboard&logoColor=white" alt="Problem"/></a>
+  <a href="#key-features"><img src="https://img.shields.io/badge/Features-059669?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Features"/></a>
+  <a href="#ai-system-architecture"><img src="https://img.shields.io/badge/Architecture-065f46?style=for-the-badge&logo=diagram&logoColor=white" alt="Architecture"/></a>
+  <a href="#ai-models"><img src="https://img.shields.io/badge/Models-10B981?style=for-the-badge&logo=pytorch&logoColor=white" alt="Models"/></a>
+</p>
 
+<p align="center">
+  <a href="#datasets"><img src="https://img.shields.io/badge/Datasets-006C35?style=for-the-badge&logo=kaggle&logoColor=white" alt="Datasets"/></a>
+  <a href="#experimental-setup"><img src="https://img.shields.io/badge/Experiment-047857?style=for-the-badge&logo=probot&logoColor=white" alt="Experiment"/></a>
+  <a href="#results"><img src="https://img.shields.io/badge/Results-059669?style=for-the-badge&logo=googleanalytics&logoColor=white" alt="Results"/></a>
+  <a href="#system-interface"><img src="https://img.shields.io/badge/Dashboard-065f46?style=for-the-badge&logo=flask&logoColor=white" alt="Dashboard"/></a>
+  <a href="#installation"><img src="https://img.shields.io/badge/Install-10B981?style=for-the-badge&logo=terminal&logoColor=white" alt="Install"/></a>
+</p>
+
+<hr/>
+
+# 🔎 Table of Contents
+- [🌊 Overview](#overview)
+- [🎯 Problem Statement](#problem-statement)
+- [🚀 Key Features](#key-features)
+- [🧠 AI System Architecture](#ai-system-architecture)
+- [🤖 AI Models](#ai-models)
+- [📦 Model Weights](#model-weights)
+- [📊 Datasets](#datasets)
+- [🔬 Experimental Setup](#experimental-setup)
+- [📈 Results](#results)
+- [🖥 System Interface](#system-interface)
+- [🖼 System Screenshots](#system-screenshots)
+- [🎥 System Demonstration](#system-demonstration)
+- [📂 Repository Structure](#repository-structure)
+- [⚙ Installation](#installation)
+- [🔭 Future Work](#future-work)
 
 <hr/>
 
@@ -108,7 +126,7 @@ This project proposes a **computer vision based flood interpretation system** ca
 # 🧠 AI System Architecture
 The system follows a **multi-stage AI pipeline** designed to interpret flood environments using complementary computer vision models.
 
-```mermaid
+~~~mermaid
 flowchart LR
 A[Input Image] --> B[Image Preprocessing]
 B --> C[EfficientNet Classification]
@@ -118,7 +136,7 @@ C --> F[AI Interpretation Layer]
 D --> F
 E --> F
 F --> G[Interactive AI Dashboard]
-```
+~~~
 
 Each model contributes a different layer of environmental understanding.
 
@@ -220,26 +238,20 @@ The interface provides **clear visualization of AI predictions and environmental
 # 🖼 System Screenshots
 Below are real screenshots from the dashboard, showcasing the full AI workflow across the three core tasks.
 
-> ✅ Place your screenshots here:
-> - docs/screenshots/Input.png
-> - docs/screenshots/Classification.png
-> - docs/screenshots/ObjectDetection.png
-> - docs/screenshots/FloodSegmentation.png
-
 <p align="center">
-  <img src="docs/screenshots/Input.png" width="100%" alt="Input - Image Upload">
+  <img src="assets/Input.png" width="100%" alt="Input - Image Upload">
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/Classification.png" width="100%" alt="Classification Result">
+  <img src="assets/Classification.png" width="100%" alt="Classification Result">
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/ObjectDetection.png" width="100%" alt="Object Detection Result">
+  <img src="assets/ObjectDetection.png" width="100%" alt="Object Detection Result">
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/FloodSegmentation.png" width="100%" alt="Flood Segmentation Result">
+  <img src="assets/FloodSegmentation.png" width="100%" alt="Flood Segmentation Result">
 </p>
 
 <hr/>
@@ -253,7 +265,7 @@ https://github.com/WASAN-ALMUTAAN1/Emergency-Smart-Flood-Alerting-System/release
 <hr/>
 
 # 📂 Repository Structure
-```
+~~~text
 Emergency-Smart-Flood-Alerting-System
 ├── README.md
 ├── DATASETS.md
@@ -268,28 +280,28 @@ Emergency-Smart-Flood-Alerting-System
 │   ├── Emergency_Smart_Flood_Alerting_System.pdf
 │   └── Emergency_Smart_Flood_Alerting_System_Report.pdf
 └── assets
-```
+~~~
 
 <hr/>
 
 # ⚙ Installation
 Clone the repository:
-```bash
+~~~bash
 git clone https://github.com/WASAN-ALMUTAAN1/Emergency-Smart-Flood-Alerting-System
 cd Emergency-Smart-Flood-Alerting-System
-```
+~~~
 
 Install dependencies:
-```bash
+~~~bash
 pip install -r smart-flooding-system/requirements.txt
-```
+~~~
 
 Download trained models from **GitHub Releases** and place them in the paths expected by `app.py`.
 
 Run the application:
-```bash
+~~~bash
 python smart-flooding-system/app.py
-```
+~~~
 
 <hr/>
 
@@ -300,8 +312,6 @@ Future improvements may include:
 - Integration with IoT flood sensors
 - Smart city monitoring integration
 - Deployment for autonomous hazard detection systems
-
-
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:006C35,100:10B981&height=140&section=footer" width="100%" />
