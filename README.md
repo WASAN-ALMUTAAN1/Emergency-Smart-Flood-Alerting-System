@@ -1,18 +1,13 @@
 <p align="center">
-  <img src="docs/banner.jpg" width="100%" alt="Emergency Smart Flood Alerting System">
+  <img src="assets/banner.jpg" width="100%" alt="Emergency Smart Flood Alerting System">
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:006C35,100:10B981&height=180&section=header&text=Emergency%20Smart%20Flood%20Alerting%20System&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:006C35,100:10B981&height=160&section=header&text=Emergency%20Smart%20Flood%20Alerting%20System&fontSize=34&fontColor=ffffff&animation=fadeIn&fontAlignY=38" width="100%" />
 </p>
-
-<h1 align="center">Emergency Smart Flood Alerting System</h1>
-
 <p align="center">
-AI-Powered Computer Vision Framework for Flood Scene Analysis and Safer Driving in Saudi Arabia
+  <b>AI-Powered Computer Vision Framework for Flood Scene Analysis and Safer Driving in Saudi Arabia</b>
 </p>
-
-<hr/>
 
 <p align="center">
   <img src="https://img.shields.io/badge/AI-Deep%20Learning-059669?style=for-the-badge">
@@ -23,15 +18,41 @@ AI-Powered Computer Vision Framework for Flood Scene Analysis and Safer Driving 
 </p>
 
 <p align="center">
-  <b>Artificial Intelligence System for Flood Scene Analysis Using Computer Vision</b>
+  <sub>
+    A computer vision framework for analyzing road flood environments using deep learning models and an interactive visualization dashboard.
+  </sub>
+  <br/>
+  <sub>
+    Model weights and the system demonstration video are available through GitHub Releases.
+  </sub>
 </p>
 
 <p align="center">
-  <sub>A computer vision framework for analyzing road flood environments using deep learning models and an interactive visualization interface.</sub><br/>
-  <sub>Model weights and the system demonstration video are available through GitHub Releases.</sub>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" />
 </p>
 
-<hr/>
+<ul>
+  <li><a href="#overview"><img src="assets/green-arrow.svg" width="14" /> </a> Overview</li>
+  <li><a href="#problem-statement"><img src="assets/green-arrow.svg" width="14" /> </a> Problem Statement</li>
+</ul>
+
+## 🔎 Table of Contents
+
+- [🟢➜](#overview) Overview
+- [🟢➜](#problem-statement) Problem Statement
+- [🟢➜](#key-features) Key Features
+- [🟢➜](#ai-system-architecture) AI System Architecture
+- [🟢➜](#ai-models) AI Models
+- [🟢➜](#datasets) Datasets
+- [🟢➜](#experimental-setup) Experimental Setup
+- [🟢➜](#results) Results
+- [🟢➜](#system-interface) System Interface
+- [🟢➜](#system-screenshots) Example Output
+- [🟢➜](#system-demonstration) System Demonstration
+- [🟢➜](#repository-structure) Repository Structure
+- [🟢➜](#installation) Installation
+- [🟢➜](#future-work) Future Work
+
 
 # 🔎 Table of Contents
 - [ Overview](#overview)
@@ -49,7 +70,7 @@ AI-Powered Computer Vision Framework for Flood Scene Analysis and Safer Driving 
 - [ Installation](#installation)
 - [ Future Work](#future-work)
 
-<hr/>
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
 
 <a id="overview"></a>
 # 🌊 Overview
@@ -68,7 +89,8 @@ The system presents results through an **interactive web dashboard**, enabling i
 
 This project demonstrates how **artificial intelligence can support environmental awareness and road safety in Saudi Arabia.**
 
-<hr/>
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
+
 
 <a id="problem-statement"></a>
 #  Problem Statement
@@ -82,7 +104,8 @@ Drivers may encounter flooded roads without reliable information about:
 
 This project proposes a **computer vision based flood interpretation system** capable of analyzing road scenes and providing **visual risk assessment** from images.
 
-<hr/>
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
+
 
 <a id="key-features"></a>
 #  Key Features
@@ -96,7 +119,8 @@ This project proposes a **computer vision based flood interpretation system** ca
 ✔ Real-Time Image Analysis  
 ✔ Research-Level Experimental Evaluation  
 
-<hr/>
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
+
 
 <a id="ai-system-architecture"></a>
 #  AI System Architecture
@@ -126,7 +150,7 @@ Each model contributes a different layer of environmental understanding.
 
 Together they provide a **holistic AI interpretation of flood scenes**.
 
-<hr/>
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
 
 <a id="ai-models"></a>
 #  AI Models
@@ -139,7 +163,7 @@ The system integrates multiple deep learning architectures.
 | Object Detection | YOLOv5 | Identify vehicles and humans |
 | Flood Segmentation | YOLOv8 | Detect flooded regions |
 
-<hr/>
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
 
 
 
@@ -155,7 +179,7 @@ Full dataset documentation is available in: <div align="center">
   </a>
 </div>
 
-<hr/>
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
 
 <a id="experimental-setup"></a>
 # Experimental Setup
@@ -173,7 +197,7 @@ Evaluation metrics:
 - mAP@0.5
 - IoU
 
-<hr/>
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
 
 <a id="results"></a>
 #  Results
@@ -194,7 +218,7 @@ EfficientNet achieved approximately:
 ## Flood Segmentation
 YOLOv8 segmentation models successfully detected flood regions with high pixel-level accuracy. The segmentation outputs enable visual estimation of **flood severity and water coverage**.
 
-<hr/>
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
 
 <a id="system-interface"></a>
 #  System Interface
@@ -210,7 +234,7 @@ Users can:
 
 The interface provides **clear visualization of AI predictions and environmental insights**.
 
-<hr/>
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
 
 <a id="system-screenshots"></a>
 # Example Output
@@ -233,7 +257,7 @@ Below are real screenshots from the dashboard, showcasing the full AI workflow a
   <img src="assets/FloodSegmentation.png" width="100%" alt="Flood Segmentation Result">
 </p>
 
-<hr/>
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
 
 <a id="system-demonstration"></a>
 # System Demonstration
@@ -245,8 +269,7 @@ A full demonstration of the system is available in the **Releases** section.
     <img src="https://img.shields.io/badge/▶%20Watch%20System%20Demo-Open%20Releases%20Page-006C35?style=for-the-badge&logo=github&logoColor=white" alt="Watch Demo (Releases Page)">
   </a>
 </div>
-
-<hr/>
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
 
 <a id="repository-structure"></a>
 #  Repository Structure
@@ -268,7 +291,7 @@ Emergency-Smart-Flood-Alerting-System
 └── assets/
 ```
 
-<hr/>
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
 
 <a id="installation"></a>
 # ⚙ Installation
@@ -291,7 +314,7 @@ Run the application:
 python smart-flooding-system/app.py
 ```
 
-<hr/>
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=rect&color=006C35&height=6" width="100%" /> </p>
 
 <a id="future-work"></a>
 #  Future Work
@@ -306,3 +329,6 @@ Future improvements may include:
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:006C35,100:10B981&height=140&section=footer" width="100%" />
 </p>
+
+
+
